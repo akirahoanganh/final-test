@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Xếp Hình Trên Web</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <button id="startBtn">Bắt đầu</button>
+      </div>
+
+      <div class="game-area">
+        <div id="board" class="board"></div>
+
+        <div class="side">
+          <div class="clock-box">
+            <div class="clock-title">Đồng Hồ</div>
+
+            <div id="timer">00:00</div>
+          </div>
+
+          <div class="guide-title">Hướng Dẫn Di Chuyển</div>
+
+          <div class="keyboard">
+            <div class="key-row">
+              <div class="key">↑</div>
+            </div>
+
+            <div class="key-row">
+              <div class="key">←</div>
+              <div class="key">↓</div>
+              <div class="key">→</div>
+            </div>
+
+            <div style="height: 8px"></div>
+
+            <div class="key-row">
+              <div class="key">A</div>
+              <div class="key">S</div>
+              <div class="key">D</div>
+            </div>
+
+            <div class="key-row">
+              <div class="key">W</div>
+            </div>
+          </div>
+
+          <div id="message"></div>
+        </div>
+      </div>
+
+      <div class="history">
+        <div class="history-title">Lịch Sử Lượt Chơi</div>
+
+        <div class="history-table">
+          <div class="history-header">
+            <div>Bước đi</div>
+            <div>Thời Gian</div>
+          </div>
+
+          <div id="historyBody"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
